@@ -31,4 +31,3 @@ echo -e "\e[31;1m DON'T FORGET TO COPY /var/tmp/portage/sys-fs/permutations_rust
 echo -e "\e[31;1m TO RUN PROGRAM: RUN permutation.sh with an argument like: permutation.sh 3\e[0m"	
 
 }	
-
