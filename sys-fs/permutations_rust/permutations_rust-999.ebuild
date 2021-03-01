@@ -23,7 +23,14 @@ einfo "TO RUN PROGRAM: RUN permutation.sh with an argument like: permutation.sh 
 
 }
 
-src_install() {
+src_install() {	
+echo -e "\e[31;1m Trying to copy permutations_rust to /usr/local/ 3\e[0m"	
+cp -r /var/tmp/portage/sys-fs/permutations_rust-999/work/usr/local/permutations_rust /usr/local/permutations_rust
+
+if [ -f  "/usr/local/permutations_rust/permutation.sh" ]
+	then
+echo -e "\e[31;1m DONE! SEARCH PROGRAM HERE: /usr/local/permutations_rust ;)\e[0m"	
+fi;
 
 elog  "COPY /var/tmp/portage/sys-fs/permutations_rust-999/work/ to your home directory";
 elog "TO RUN PROGRAM: RUN permutation.sh with an argument like: permutation.sh 3"
